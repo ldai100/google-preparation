@@ -1,7 +1,7 @@
 public class NineTwoFive {
 
 
-    // initial solution. This solution assumes all characters are valid;
+    // initial solution. This solution assumes no other characters will be pressed
     public boolean isLongPressedName(String name, String typed) {
         int top = 0, bottom = 0;
         while(top < name.length() && bottom < typed.length()) {
@@ -10,14 +10,13 @@ public class NineTwoFive {
 
             if(n == t) {
                 top++;
-                bottom++;
             }
             else {
                 if(top == 0 || t != name.charAt(top - 1)) {
                     return false;
                 }
-                bottom++;
             }
+            bottom++;
         }
         return top == name.length();
     }
