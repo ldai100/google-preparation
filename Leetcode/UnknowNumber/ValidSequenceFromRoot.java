@@ -19,6 +19,7 @@ public class ValidSequenceFromRoot {
             this.right = right;
         }
     }
+
     private boolean ans;
     public boolean isValidSequence(TreeNode root, int[] arr) {
         ans = false;
