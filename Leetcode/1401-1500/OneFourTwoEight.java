@@ -1,6 +1,19 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class OneFourTwoEight {
+
+    // I only added this so I don't have to see red errors...
+    class BinaryMatrix {
+        public List<Integer> dimensions() {
+            return new ArrayList();
+        }
+
+        public int get(int r, int c){
+            return 0;
+        }
+
+    }
 
     public int leftMostColumnWithOne(BinaryMatrix b) {
         List<Integer> dimensions = b.dimensions();
